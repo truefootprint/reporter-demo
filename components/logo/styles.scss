@@ -36,3 +36,19 @@
 .bottom {
   background: $accent2-500;
 }
+
+.logo_with_text {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 2.7em;
+  vertical-align: top;
+  margin-left: 0.5em;
+  font-weight: 300;
+}
+
+.true {
+  font-weight: 700;
+}

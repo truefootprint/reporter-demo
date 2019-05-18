@@ -10,4 +10,14 @@ const Logo = () => (
   </div>
 );
 
+Logo.WithText = () => (
+  <div className={css.logo_with_text}>
+    <Logo />
+
+    <div className={css.text}>
+      <div className={css.true}>True</div>Footprint
+    </div>
+  </div>
+);
+
 export default Logo;

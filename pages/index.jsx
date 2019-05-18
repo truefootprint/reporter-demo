@@ -4,7 +4,7 @@ import Logo from "../components/logo";
 const Index = () => (
   <Layout>
     <p>Hello, world!</p>
-    <Logo />
+    <Logo.WithText />
   </Layout>
 );
 

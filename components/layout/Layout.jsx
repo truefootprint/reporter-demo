@@ -5,7 +5,7 @@ import "./typography.scss";
 
 const Layout = ({ children }) => <>
   <Head>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" />
   </Head>
 
   {children}
