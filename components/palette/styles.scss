@@ -1,0 +1,57 @@
+@import "../layout/color.scss";
+
+.section {
+  margin: 3em;
+
+  p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  span {
+    width: 5em;
+    height: 5em;
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+  }
+}
+
+.primary_100 { background: $primary-100; }
+.primary_200 { background: $primary-200; }
+.primary_300 { background: $primary-300; }
+.primary_400 { background: $primary-400; }
+.primary_500 { background: $primary-500; }
+.primary_600 { background: $primary-600; }
+.primary_700 { background: $primary-700; }
+.primary_800 { background: $primary-800; }
+.primary_900 { background: $primary-900; }
+
+.accent1_100 { background: $accent1-100; }
+.accent1_200 { background: $accent1-200; }
+.accent1_300 { background: $accent1-300; }
+.accent1_400 { background: $accent1-400; }
+.accent1_500 { background: $accent1-500; }
+.accent1_600 { background: $accent1-600; }
+.accent1_700 { background: $accent1-700; }
+.accent1_800 { background: $accent1-800; }
+.accent1_900 { background: $accent1-900; }
+
+.accent2_100 { background: $accent2-100; }
+.accent2_200 { background: $accent2-200; }
+.accent2_300 { background: $accent2-300; }
+.accent2_400 { background: $accent2-400; }
+.accent2_500 { background: $accent2-500; }
+.accent2_600 { background: $accent2-600; }
+.accent2_700 { background: $accent2-700; }
+.accent2_800 { background: $accent2-800; }
+.accent2_900 { background: $accent2-900; }
+
+.neutral_100 { background: $neutral-100; }
+.neutral_200 { background: $neutral-200; }
+.neutral_300 { background: $neutral-300; }
+.neutral_400 { background: $neutral-400; }
+.neutral_500 { background: $neutral-500; }
+.neutral_600 { background: $neutral-600; }
+.neutral_700 { background: $neutral-700; }
+.neutral_800 { background: $neutral-800; }
+.neutral_900 { background: $neutral-900; }
