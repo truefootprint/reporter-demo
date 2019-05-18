@@ -11,7 +11,7 @@ const Index = () => (
     </p>
 
     <div className={css.restart}>
-      <a href="/">Restart App</a>
+      <a href=".">Restart App</a>
     </div>
 
     <p className={css.color_palette}>Color palette</p>

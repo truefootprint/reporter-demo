@@ -1,15 +1,16 @@
 import Logo from "../logo";
+import Image from "../image";
 import css from "./styles.scss";
 
 const Loading = () => (
   <div className={css.loading}>
-    <img className={css.footprint} src="/static/images/footprint.png" />
+    <Image className={css.footprint} src="/static/images/footprint.png" />
 
     <div className={css.logo}>
       <Logo.WithText />
     </div>
 
-    <img className={css.spinner} src="/static/images/spinner.gif" />
+    <Image className={css.spinner} src="/static/images/spinner.gif" />
   </div>
 );
 

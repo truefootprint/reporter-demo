@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from "next/head";
+import Icon from "../icon";
 
 import "./reset.scss";
 import "./typography.scss";
@@ -8,7 +9,7 @@ const Layout = ({ children }) => <>
     <title>TrueFootprint</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" />
-    <link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <Icon src="/static/images/apple-touch-icon.png" type="apple-touch-icon" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
