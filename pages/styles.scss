@@ -1,0 +1,23 @@
+@import "components/layout/color.scss";
+
+.instructions {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+.restart {
+  text-align: center;
+  margin-top: 2em;
+
+  a {
+    color: $accent1-500;;
+    font-size: 1.5em;
+  }
+}
+
+.color_palette {
+  font-size: 2em;
+  color: $accent2-900;
+  text-align: center;
+  margin-top: 5em;
+}
