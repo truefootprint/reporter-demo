@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
-import Logo from "../components/logo";
+import Loading from "../components/loading";
 
 const Index = () => (
   <Layout>
+    <Loading />
     <p>Hello, world!</p>
-    <Logo.WithText />
   </Layout>
 );
 
