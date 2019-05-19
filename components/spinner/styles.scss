@@ -1,0 +1,27 @@
+.spinner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  background: white;
+  animation: overlay 0.5s;
+
+  img {
+    margin: auto;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+}

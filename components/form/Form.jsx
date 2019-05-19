@@ -1,11 +1,13 @@
+import Spinner from "../spinner";
 import css from "./styles.scss";
-import Link from "../link";
 
-const Form = () => (
+const Form = ({ setPage }) => <>
+  <Spinner />
+
   <div className={css.form}>
     <h3>Send an update</h3>
 
-    <Link className={css.back} href="/">&lt; back</Link>
+    <a className={css.back} onClick={() => setPage("overview")}>&lt; back</a>
 
     <p className={css.intro}>
       Please answer the following questions about the progress of the project.
@@ -84,11 +86,11 @@ const Form = () => (
     </div>
 
     <div className={css.center}>
-      <Link className={css.call_to_action} href="/thanks">
+      <button className={css.call_to_action} onClick={() => setPage("thanks")}>
         Submit answers
-      </Link>
+      </button>
     </div>
   </div>
-);
+</>;
 
 export default Form;

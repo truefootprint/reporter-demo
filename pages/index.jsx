@@ -1,22 +1,27 @@
+import React, { useState} from "react";
 import Layout from "../components/layout";
 import Loading from "../components/loading";
-import Link from "../components/link";
 import Overview from "../components/overview";
-import css from "./styles.scss";
+import Form from "../components/form";
+import Thanks from "../components/thanks";
 
-const Index = () => (
-  <Layout>
-    <Loading />
+const Index = () => {
+  const [page, setPage] = useState("overview");
 
-    <p className={css.instructions}>
-      Please click on the icon in the bottom-middle of your iPhone screen to add this app to your home screen.
-    </p>
+  const setPageAndScroll = (page) => {
+    window.scrollTo(0, 0);
+    setPage(page);
+  };
 
-    <div className={css.restart}>
-      <Link href="/">Restart App</Link>
-    </div>
-    <Overview />
-  </Layout>
-);
+  return (
+    <Layout>
+      <Loading />
+
+      {page === "overview" && <Overview setPage={setPageAndScroll} />}
+      {page === "form" && <Form setPage={setPageAndScroll} />}
+      {page === "thanks" && <Thanks setPage={setPageAndScroll} />}
+    </Layout>
+  );
+};
 
 export default Index;

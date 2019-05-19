@@ -1,8 +1,7 @@
 import css from "./styles.scss";
 import Image from "../image";
-import Link from "../link";
 
-const Overview = () => (
+const Overview = ({ setPage }) => (
   <div className={css.overview}>
     <h3>Bilobilo</h3>
     <h4>Project 1: School</h4>
@@ -20,10 +19,10 @@ const Overview = () => (
       <li>Length: 18m, Width: 6m</li>
     </ul>
 
-    <div className={css.center}>
-      <Link className={css.call_to_action} href="/form">
+    <div className={css.center} onClick={() => setPage("form")}>
+      <button className={css.call_to_action}>
         Send an update
-      </Link>
+      </button>
     </div>
   </div>
 );
