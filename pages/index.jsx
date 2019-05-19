@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Loading from "../components/loading";
-import Palette from "../components/palette";
+import Overview from "../components/overview";
 import css from "./styles.scss";
 
 const Index = () => (
@@ -13,9 +13,7 @@ const Index = () => (
     <div className={css.restart}>
       <a href=".">Restart App</a>
     </div>
-
-    <p className={css.color_palette}>Color palette</p>
-    <Palette />
+    <Overview />
   </Layout>
 );
 

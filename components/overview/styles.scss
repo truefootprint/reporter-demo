@@ -1,0 +1,54 @@
+@import "../layout/color.scss";
+
+.overview {
+  padding: 1em;
+
+  h3, h4 {
+    font-size: 2em;
+    margin: 0.5em 0 1em 0;
+    color: $primary-700;
+  }
+
+  h3:after {
+    content: '—';
+    display: block;
+    margin-top: 0.2em;
+    font-weight: 700;
+  }
+
+  h4 {
+    color: $accent2-600;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  ul {
+    list-style: square;
+    margin-left: 1.5em;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  button {
+    display: block;
+    font-size: 1.1em;
+    padding: 0.5em 0.8em;
+    background: $accent1-100;
+    border: 1px solid $accent1-300;
+    border-radius: 0.2em;
+    text-align: center;
+    margin: 2em auto 3em auto;
+  }
+
+  .map {
+    width: 100%;
+    margin: 2em 0;
+    border: 1px solid $neutral-700;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.2em $neutral-700;
+  }
+}
