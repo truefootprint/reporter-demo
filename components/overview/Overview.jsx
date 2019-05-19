@@ -1,5 +1,6 @@
 import css from "./styles.scss";
 import Image from "../image";
+import Link from "../link";
 
 const Overview = () => (
   <div className={css.overview}>
@@ -19,9 +20,11 @@ const Overview = () => (
       <li>Length: 18m, Width: 6m</li>
     </ul>
 
-    <button>
-      Send an update
-    </button>
+    <div className={css.center}>
+      <Link className={css.call_to_action} href="/form">
+        Send an update
+      </Link>
+    </div>
   </div>
 );
 

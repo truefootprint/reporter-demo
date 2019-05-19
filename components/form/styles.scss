@@ -1,0 +1,64 @@
+@import "../layout/color.scss";
+
+.form {
+  padding: 1em;
+
+  .back {
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+
+  .intro {
+    line-height: 1.4;
+    margin-bottom: 3em;
+    color: $accent2-900;
+  }
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.question {
+  flex: 0.5;
+  text-align: right;
+  line-height: 1.4;
+  padding-right: 0.5em;
+}
+
+.answer {
+  flex: 0.5;
+  display: flex;
+
+  input[type=text] {
+    font-size: 0.8em;
+    height: 2em;
+    border-radius: 0;
+  }
+
+  .radio {
+    flex: 0.5;
+
+    input {
+      margin-right: 0.3em;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.call_to_action {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0.5em 0.8em;
+  color: $primary-900;
+  background: $primary-300;
+  border: 1px solid $primary-500;
+  border-radius: 0.2em;
+  text-align: center;
+  margin: 1em 0 3em 0;
+}

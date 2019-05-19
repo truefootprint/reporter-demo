@@ -6,3 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $neutral-900;
 }
+
+a {
+  text-decoration: none;
+  color: $accent1-700;
+}
+
+h3, h4 {
+  font-size: 2em;
+  margin: 0.5em 0 1em 0;
+  color: $primary-700;
+}
+
+h3:after {
+  content: '—';
+  display: block;
+  margin-top: 0.2em;
+  font-weight: 700;
+}
+
+h4 {
+  color: $accent2-600;
+}

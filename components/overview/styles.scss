@@ -3,23 +3,6 @@
 .overview {
   padding: 1em;
 
-  h3, h4 {
-    font-size: 2em;
-    margin: 0.5em 0 1em 0;
-    color: $primary-700;
-  }
-
-  h3:after {
-    content: '—';
-    display: block;
-    margin-top: 0.2em;
-    font-weight: 700;
-  }
-
-  h4 {
-    color: $accent2-600;
-  }
-
   p {
     line-height: 1.4;
   }
@@ -33,15 +16,20 @@
     margin-bottom: 1em;
   }
 
-  button {
-    display: block;
+  .center {
+    text-align: center;
+  }
+
+  .call_to_action {
+    display: inline-block;
     font-size: 1.1em;
     padding: 0.5em 0.8em;
+    color: $accent1-900;
     background: $accent1-100;
     border: 1px solid $accent1-300;
     border-radius: 0.2em;
     text-align: center;
-    margin: 2em auto 3em auto;
+    margin: 2em 0 3em 0;
   }
 
   .map {
