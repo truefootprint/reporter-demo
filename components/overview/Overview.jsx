@@ -11,7 +11,7 @@ const Overview = ({ setPage }) => (
       three classroom school, with water, electricity and boy and girl toilets.
     </p>
 
-    <Image className={css.map} src="/static/images/map.png" />
+    <Image className={css.map} src="/static/images/school-map.png" />
 
     <ul>
       <li>The foundation has to be solid cement</li>
