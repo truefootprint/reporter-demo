@@ -99,6 +99,14 @@ const Form = ({ setPage }) => {
       </div>
 
       <div className={css.field}>
+        <span className={css.question}>Test date:</span>
+
+        <div className={css.answer}>
+          <input type="date" />
+        </div>
+      </div>
+
+      <div className={css.field}>
         <span className={css.question}>Photo:</span>
 
         <div className={css.answer}>
