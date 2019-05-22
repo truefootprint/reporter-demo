@@ -13,7 +13,7 @@ const Thanks = () => <>
     </p>
 
     <a className={css.logo} href=".">
-      <Logo.WithText />
+      <Logo variant="stackedText" />
     </a>
   </div>
 </>;
