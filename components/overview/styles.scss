@@ -5,6 +5,7 @@
 
   p {
     line-height: 1.4;
+    margin-bottom: 1.2em;
   }
 
   ul {
@@ -14,6 +15,19 @@
 
   li {
     margin-bottom: 1em;
+  }
+
+  .map {
+    width: 100%;
+    margin: 0.8em 0 2em 0;
+    border: 1px solid $neutral-700;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.2em $neutral-500;
+  }
+
+  .spec {
+    display: block;
+    margin: 2em 0;
   }
 
   .center {
@@ -29,14 +43,6 @@
     border: 1px solid $accent1-300;
     border-radius: 0.2em;
     text-align: center;
-    margin: 2em 0 3em 0;
-  }
-
-  .map {
-    width: 100%;
-    margin: 2em 0;
-    border: 1px solid $neutral-700;
-    box-sizing: border-box;
-    box-shadow: 0 0 0.2em $neutral-500;
+    margin-bottom: 3em;
   }
 }

@@ -11,6 +11,10 @@ const Overview = ({ setPage }) => (
       three classroom school, with water, electricity and boy and girl toilets.
     </p>
 
+    <p>
+      The building is to be built on the intersection of the N3 and the R529:
+    </p>
+
     <Image className={css.map} src="/static/images/school-map.png" />
 
     <ul>
@@ -19,9 +23,11 @@ const Overview = ({ setPage }) => (
       <li>Length: 18m, Width: 6m</li>
     </ul>
 
+    <a className={css.spec}>View full specification and contract</a>
+
     <div className={css.center} onClick={() => setPage("form")}>
       <button className={css.call_to_action}>
-        Send an update
+        Start
       </button>
     </div>
   </div>
