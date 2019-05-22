@@ -85,6 +85,13 @@ const Form = ({ setPage }) => <>
       </div>
     </div>
 
+    <div className={css.field}>
+      <span className={css.question}>Any other comments:</span>
+    </div>
+    <div className={css.offset}>
+      <textarea></textarea>
+    </div>
+
     <div className={css.center}>
       <button className={css.call_to_action} onClick={() => setPage("thanks")}>
         Submit answers
