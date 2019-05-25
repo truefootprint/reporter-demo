@@ -7,19 +7,21 @@ import Thanks from "../components/thanks";
 
 const Index = () => {
   const [page, setPage] = useState("overview");
+  const [loading, setLoading] = useState(true);
 
   const setPageAndScroll = (page) => {
     window.scrollTo(0, 0);
     setPage(page);
+    setLoading(false);
   };
 
   return (
     <Layout>
-      <Loading />
+      {loading && <Loading />}
 
       {page === "overview" && <Overview setPage={setPageAndScroll} />}
       {page === "form" && <Form setPage={setPageAndScroll} />}
-      {page === "thanks" && <Thanks setPage={setPageAndScroll} />}
+      {page === "thanks" && <Thanks setPage={setPageAndScroll} setLoading={setLoading} />}
     </Layout>
   );
 };
