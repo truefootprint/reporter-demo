@@ -36,6 +36,7 @@
     font-size: 0.8em;
     height: 2em;
     border-radius: 0;
+    max-width: 10em;
   }
 
   input[type=file] {
@@ -49,6 +50,15 @@
     input {
       margin-right: 0.3em;
     }
+  }
+}
+
+.answer.project_progress {
+  display: block;
+
+  .radio {
+    display: block;
+    margin-bottom: 0.2em;
   }
 }
 
@@ -74,10 +84,10 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: -1.5em;
-  padding: 0 1em 0 1.5em;
+  padding: 0 1em 0 1.4em;
 
   textarea {
-    width: 100%;
+    width: 97%;
     height: 5em;
     border-radius: 0;
   }
@@ -96,6 +106,47 @@
   border: 1px solid $primary-500;
   border-radius: 0.2em;
   text-align: center;
-  margin: 2em 0 3em 0;
+  margin-bottom: 3em;
   cursor: pointer;
+}
+
+.section {
+  padding: 1.5em 0.2em;
+  margin-bottom: 2em;
+
+  &.first {
+    background: $primary-50;
+    box-shadow: 0 0 1em $primary-50;
+    border: 1px solid $primary-200;
+  }
+
+  &.second {
+    background: $neutral-100;
+    box-shadow: 0 0 1em $neutral-100;
+    border: 1px solid $neutral-300;
+  }
+
+  &.third {
+    background: $accent2-50;
+    box-shadow: 0 0 1em $accent2-50;
+    border: 1px solid $accent2-200;
+  }
+
+  &.fourth {
+    background: $accent1-50;
+    box-shadow: 0 0 1em $accent1-50;
+    border: 1px solid $accent1-100;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    margin-left: 0.8em;
+  }
+
+  h5:after {
+    content: '—';
+    display: block;
+    margin: 0.2em 0 1em 0;
+    font-weight: 700;
+  }
 }
