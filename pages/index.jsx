@@ -7,8 +7,8 @@ import Thanks from "../components/thanks";
 import Content from "../static/content.js";
 
 const Index = () => {
-  const [page, setPage] = useState("thanks");
-  const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState("overview");
+  const [loading, setLoading] = useState(true);
   const [project, setProject] = useState("school");
   const [language, setLanguage] = useState("english");
 
@@ -18,16 +18,21 @@ const Index = () => {
     setLoading(false);
   };
 
-  const content = Content[project][language];
+  const content = Content[language][project];
 
   return (
     <Layout>
-      <p>{content.hello}</p>
       {loading && <Loading />}
 
-      {page === "overview" && <Overview setPage={setPageAndScroll} content={content} />}
-      {page === "form" && <Form setPage={setPageAndScroll} content={content} />}
-      {page === "thanks" && <Thanks setPage={setPageAndScroll} setLoading={setLoading} content={content} />}
+      {page === "overview" && <Overview setPage={setPageAndScroll} content={content.overview} />}
+      {page === "form" && <Form setPage={setPageAndScroll} content={content.form} />}
+
+      {page === "thanks" &&
+          <Thanks setPage={setPageAndScroll}
+                  setLoading={setLoading}
+                  setProject={setProject}
+                  setLanguage={setLanguage}
+                  content={content.thanks} />}
     </Layout>
   );
 };

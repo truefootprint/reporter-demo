@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Spinner from "../spinner";
 import css from "./styles.scss";
 
-const Form = ({ setPage }) => {
+const Form = ({ setPage, content }) => {
   const [photo, setPhoto] = useState();
   const [photoText, setPhotoText] = useState();
 
@@ -14,69 +14,69 @@ const Form = ({ setPage }) => {
     setPhotoText(new Date().toLocaleString());
   };
 
+  const section1 = content.section1;
+  const section2 = content.section2;
+  const section3 = content.section3;
+  const section4 = content.section4;
+
   return <>
     <Spinner />
 
     <div className={css.form}>
-      <h3>Send an update</h3>
+      <h3>{content.title}</h3>
 
-      <a className={css.back} onClick={() => setPage("overview")}>&lt; back</a>
-
-      <p className={css.intro}>
-        Please answer the following questions about the progress of the project.
-        If you are unsure of an answer, you can leave it blank.
-        Please refer to training materials when in doubt.
-      </p>
+      <a className={css.back} onClick={() => setPage("overview")}>&lt; {content.back}</a>
+      <p className={css.intro}>{content.intro}</p>
 
       <div className={`${css.section} ${css.first}`}>
-        <h5>Building</h5>
+        <h5>{section1.title}</h5>
 
         <div className={css.field}>
-          <span className={css.question}>Wall length in metres:</span>
+          <span className={css.question}>{section1.question1}</span>
           <div className={css.answer}>
-            <input type="text" placeholder="e.g. 5" />
+            <input type="text" placeholder={section1.placeholder1} />
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Wall width in metres:</span>
+          <span className={css.question}>{section1.question2}</span>
           <div className={css.answer}>
-            <input type="text" placeholder="e.g. 5" />
+            <input type="text" placeholder={section1.placeholder2} />
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Number of toilets:</span>
+          <span className={css.question}>{section1.question3}</span>
           <div className={css.answer}>
-            <input type="text" placeholder="e.g. 3" />
+            <input type="text" placeholder={section1.placeholder3} />
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Number of washbasins:</span>
+          <span className={css.question}>{section1.question4}</span>
           <div className={css.answer}>
-            <input type="text" placeholder="e.g. 3" />
+            <input type="text" placeholder={section1.placeholder4} />
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Number of rooms:</span>
+          <span className={css.question}>{section1.question5}</span>
           <div className={css.answer}>
-            <input type="text" placeholder="e.g. 3" />
+            <input type="text" placeholder={section1.placeholder5} />
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Electricity works:</span>
+          <span className={css.question}>{section1.question6}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-1" />Yes</label>
-            <label className={css.radio}><input type="radio" name="group-1" />No</label>
+            <label className={css.radio}><input type="radio" name="group-1" />{section1.option6a}</label>
+            <label className={css.radio}><input type="radio" name="group-1" />{section1.option6b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Photo:</span>
+          <span className={css.question}>{section1.question7}</span>
 
           <div className={css.answer}>
             {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
@@ -85,7 +85,7 @@ const Form = ({ setPage }) => {
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Any other comments:</span>
+          <span className={css.question}>{section1.question8}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>
@@ -93,37 +93,37 @@ const Form = ({ setPage }) => {
       </div>
 
       <div className={`${css.section} ${css.second}`}>
-        <h5>Cement</h5>
+        <h5>{section2.title}</h5>
 
         <div className={css.field}>
-          <span className={css.question}>Floats in water:</span>
+          <span className={css.question}>{section2.question1}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-2" />Yes</label>
-            <label className={css.radio}><input type="radio" name="group-2" />No</label>
+            <label className={css.radio}><input type="radio" name="group-2" />{section2.option1a}</label>
+            <label className={css.radio}><input type="radio" name="group-2" />{section2.option1b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Contains lumps:</span>
+          <span className={css.question}>{section2.question2}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-3" />Yes</label>
-            <label className={css.radio}><input type="radio" name="group-3" />No</label>
+            <label className={css.radio}><input type="radio" name="group-3" />{section2.option2a}</label>
+            <label className={css.radio}><input type="radio" name="group-3" />{section2.option2b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Strength test:</span>
+          <span className={css.question}>{section2.question3}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-4" />Pass</label>
-            <label className={css.radio}><input type="radio" name="group-4" />Fail</label>
+            <label className={css.radio}><input type="radio" name="group-4" />{section2.option3a}</label>
+            <label className={css.radio}><input type="radio" name="group-4" />{section2.option3b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Pack date:</span>
+          <span className={css.question}>{section2.question4}</span>
 
           <div className={css.answer}>
             <input type="date" />
@@ -131,7 +131,7 @@ const Form = ({ setPage }) => {
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Photo:</span>
+          <span className={css.question}>{section2.question5}</span>
 
           <div className={css.answer}>
             {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
@@ -140,7 +140,7 @@ const Form = ({ setPage }) => {
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Any other comments:</span>
+          <span className={css.question}>{section2.question6}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>
@@ -148,55 +148,55 @@ const Form = ({ setPage }) => {
       </div>
 
       <div className={`${css.section} ${css.third}`}>
-        <h5>Bricks</h5>
+        <h5>{section3.title}</h5>
 
         <div className={css.field}>
-          <span className={css.question}>Shape is uniform:</span>
+          <span className={css.question}>{section3.question1}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-5" />Yes</label>
-            <label className={css.radio}><input type="radio" name="group-5" />No</label>
+            <label className={css.radio}><input type="radio" name="group-5" />{section3.option1a}</label>
+            <label className={css.radio}><input type="radio" name="group-5" />{section3.option1b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Hardness test:</span>
+          <span className={css.question}>{section3.question2}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-6" />Pass</label>
-            <label className={css.radio}><input type="radio" name="group-6" />Fail</label>
+            <label className={css.radio}><input type="radio" name="group-6" />{section3.option2a}</label>
+            <label className={css.radio}><input type="radio" name="group-6" />{section3.option2b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Sound test:</span>
+          <span className={css.question}>{section3.question3}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-7" />Pass</label>
-            <label className={css.radio}><input type="radio" name="group-7" />Fail</label>
+            <label className={css.radio}><input type="radio" name="group-7" />{section3.option3a}</label>
+            <label className={css.radio}><input type="radio" name="group-7" />{section3.option3b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Structure test:</span>
+          <span className={css.question}>{section3.question4}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-8" />Pass</label>
-            <label className={css.radio}><input type="radio" name="group-8" />Fail</label>
+            <label className={css.radio}><input type="radio" name="group-8" />{section3.option4a}</label>
+            <label className={css.radio}><input type="radio" name="group-8" />{section3.option4b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Water test:</span>
+          <span className={css.question}>{section3.question5}</span>
 
           <div className={css.answer}>
-            <label className={css.radio}><input type="radio" name="group-9" />Pass</label>
-            <label className={css.radio}><input type="radio" name="group-9" />Fail</label>
+            <label className={css.radio}><input type="radio" name="group-9" />{section3.option5a}</label>
+            <label className={css.radio}><input type="radio" name="group-9" />{section3.option5b}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Photo:</span>
+          <span className={css.question}>{section3.question6}</span>
 
           <div className={css.answer}>
             {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
@@ -205,7 +205,7 @@ const Form = ({ setPage }) => {
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Any other comments:</span>
+          <span className={css.question}>{section3.question7}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>
@@ -213,20 +213,20 @@ const Form = ({ setPage }) => {
       </div>
 
       <div className={`${css.section} ${css.fourth}`}>
-        <h5>Overall</h5>
+        <h5>{section4.title}</h5>
 
         <div className={css.field}>
-          <span className={css.question}>Progress of project:</span>
+          <span className={css.question}>{section4.question1}</span>
 
           <div className={`${css.answer} ${css.project_progress}`}>
-            <label className={css.radio}><input type="radio" name="group-10" />Good</label>
-            <label className={css.radio}><input type="radio" name="group-10" />Medium</label>
-            <label className={css.radio}><input type="radio" name="group-10" />Bad</label>
+            <label className={css.radio}><input type="radio" name="group-10" />{section4.option1a}</label>
+            <label className={css.radio}><input type="radio" name="group-10" />{section4.option1b}</label>
+            <label className={css.radio}><input type="radio" name="group-10" />{section4.option1c}</label>
           </div>
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Photo:</span>
+          <span className={css.question}>{section4.question2}</span>
 
           <div className={css.answer}>
             {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
@@ -235,7 +235,7 @@ const Form = ({ setPage }) => {
         </div>
 
         <div className={css.field}>
-          <span className={css.question}>Any other comments:</span>
+          <span className={css.question}>{section4.question3}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>
@@ -244,7 +244,7 @@ const Form = ({ setPage }) => {
 
       <div className={css.center}>
         <button className={css.call_to_action} onClick={() => setPage("thanks")}>
-          Submit answers
+          {content.call_to_action}
         </button>
       </div>
     </div>

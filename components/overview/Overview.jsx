@@ -1,33 +1,27 @@
 import css from "./styles.scss";
 import Image from "../image";
 
-const Overview = ({ setPage }) => (
+const Overview = ({ setPage, content }) => (
   <div className={css.overview}>
-    <h3>Bilobilo</h3>
-    <h4>Project 1: School</h4>
+    <h3>{content.title}</h3>
+    <h4>{content.subtitle}</h4>
 
-    <p>
-      The first of three projects to be built in the Bilobilo area will by a
-      three classroom school, with water, electricity and boy and girl toilets.
-    </p>
+    <p>{content.paragraph1}</p>
+    <p>{content.paragraph2}</p>
 
-    <p>
-      The building is to be built on the intersection of the N3 and the R529:
-    </p>
-
-    <Image className={css.map} src="/static/images/school-map.png" />
+    <Image className={css.map} src={content.image_path} />
 
     <ul>
-      <li>The foundation has to be solid cement</li>
-      <li>There must be brick walls with a slated roof</li>
-      <li>Length: 18m, Width: 6m</li>
+      <li>{content.bullet_point1}</li>
+      <li>{content.bullet_point2}</li>
+      <li>{content.bullet_point3}</li>
     </ul>
 
-    <a className={css.spec}>View full specification and contract</a>
+    <a className={css.spec}>{content.specification}</a>
 
     <div className={css.center} onClick={() => setPage("form")}>
       <button className={css.call_to_action}>
-        Start
+        {content.call_to_action}
       </button>
     </div>
   </div>

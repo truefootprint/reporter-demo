@@ -3,7 +3,7 @@ import Spinner from "../spinner";
 import Logo from "../logo";
 import css from "./styles.scss";
 
-const Thanks = ({ setPage, setLoading, setProject, setLanguage }) => {
+const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
   const projectMenu = useRef(null);
 
   const openMenu = () => {
@@ -23,15 +23,10 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage }) => {
     <Spinner />
 
     <div className={css.thanks}>
-      <p className={css.thank_you}>Thank you</p>
+      <p className={css.thank_you}>{content.title}</p>
 
-      <p className={css.received}>
-        We have received your answers.
-      </p>
-
-      <p className={css.received}>
-        We look forward to your next update in two weeks time.
-      </p>
+      <p className={css.received}>{content.paragraph1}</p>
+      <p className={css.received}>{content.paragraph2}</p>
 
       <a className={css.logo} onClick={openMenu}>
         <Logo variant="stackedText" />
@@ -39,10 +34,9 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage }) => {
     </div>
 
     <select ref={projectMenu} className={css.hidden} onChange={restartApp}>
+      <option selected disabled>Choose an option:</option>
       <option value="school,english">School: English</option>
       <option value="school,swahili">School: Swahili</option>
-      <option value="roads,english">Roads: English</option>
-      <option value="roads,swahili">Roads: Swahili</option>
     </select>
   </>;
 };
