@@ -67,7 +67,7 @@ const Form = ({ setPage, content }) => {
 
         <div className={css.field}>
           <span className={css.question}>{section1.question7}</span>
-          <div className={css.answer}><Photo /></div>
+          <div className={css.answer}><Photo placeholder={section1.placeholder7} /></div>
         </div>
 
         <div className={css.field}>
@@ -118,7 +118,7 @@ const Form = ({ setPage, content }) => {
 
         <div className={css.field}>
           <span className={css.question}>{section2.question5}</span>
-          <div className={css.answer}><Photo /></div>
+          <div className={css.answer}><Photo placeholder={section2.placeholder5} /></div>
         </div>
 
         <div className={css.field}>
@@ -179,7 +179,7 @@ const Form = ({ setPage, content }) => {
 
         <div className={css.field}>
           <span className={css.question}>{section3.question6}</span>
-          <div className={css.answer}><Photo /></div>
+          <div className={css.answer}><Photo placeholder={section3.placeholder6} /></div>
         </div>
 
         <div className={css.field}>
@@ -205,7 +205,7 @@ const Form = ({ setPage, content }) => {
 
         <div className={css.field}>
           <span className={css.question}>{section4.question2}</span>
-          <div className={css.answer}><Photo /></div>
+          <div className={css.answer}><Photo placeholder={section4.placeholder2} /></div>
         </div>
 
         <div className={css.field}>

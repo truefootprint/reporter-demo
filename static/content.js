@@ -45,6 +45,7 @@ export default {
           option6b: `No`,
 
           question7: `Photo:`,
+          placeholder7: `Choose a file`,
 
           question8: `Any other comments:`,
         },
@@ -66,6 +67,7 @@ export default {
           question4: `Pack date:`,
 
           question5: `Photo:`,
+          placeholder5: `Choose a file`,
 
           question6: `Any other comments:`,
         },
@@ -93,6 +95,7 @@ export default {
           option5b: `Fail`,
 
           question6: `Photo:`,
+          placeholder6: `Choose a file`,
 
           question7: `Any other comments:`,
         },
@@ -105,6 +108,7 @@ export default {
           option1c: `Bad`,
 
           question2: `Photo:`,
+          placeholder2: `Choose a file`,
 
           question3: `Any other comments:`,
         },
@@ -162,6 +166,7 @@ export default {
           option6b: `Hapana`,
 
           question7: `Picha:`,
+          placeholder7: `Chagua faili`,
 
           question8: `Maoni mengine yoyote:`,
         },
@@ -183,6 +188,7 @@ export default {
           question4: `Tarehe ya pakiti:`,
 
           question5: `Picha:`,
+          placeholder5: `Chagua faili`,
 
           question6: `Maoni mengine yoyote:`,
         },
@@ -210,6 +216,7 @@ export default {
           option5b: `Inashin`,
 
           question6: `Picha:`,
+          placeholder6: `Chagua faili`,
 
           question7: `Maoni mengine yoyote:`,
         },
@@ -222,6 +229,7 @@ export default {
           option1c: `Si nzuri`,
 
           question2: `Picha:`,
+          placeholder2: `Chagua faili`,
 
           question3: `Maoni mengine yoyote:`
         },

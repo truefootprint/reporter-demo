@@ -1,5 +1,8 @@
+@import "../layout/color.scss";
+
 .photo {
   position: relative;
+  width: 7.5em;
 
   img {
     width: 100%;
@@ -14,5 +17,18 @@
     display: inline-block;
     background: black;
   }
-}
 
+  button {
+    font-size: 0.8em;
+    border-radius: 0;
+    background: $primary-300;
+    border: 1px solid $primary-500;
+    padding: 0.5em 1em;
+  }
+
+  input {
+    visibility: 0;
+    opacity: 0;
+    display: none;
+  }
+}
