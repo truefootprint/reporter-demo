@@ -13,9 +13,9 @@ const Logo = ({ variant }) => {
 
   return (
     <svg width={`${width}px`} height="123px" viewBox={`0 0 ${width} 123`} version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g transform="translate(20.000000, 24.000000)">
-                <g fill-rule="nonzero">
+                <g fillRule="nonzero">
                     <polygon id="Line" fill="#D6D0C3" points="6.29411765 5.16666667 8.29411765 5.16666667 8.29411765 70.8888889 6.29411765 70.8888889"></polygon>
                     <ellipse id="Oval-Copy-23" fill="#96DBBE" cx="7.76470588" cy="7.53703704" rx="7.76470588" ry="7.53703704"></ellipse>
                     <ellipse id="Oval-Copy-25" fill="#D3BF6E" cx="7.76470588" cy="65.7777778" rx="7.76470588" ry="7.53703704"></ellipse>
