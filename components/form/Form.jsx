@@ -3,15 +3,18 @@ import Spinner from "../spinner";
 import css from "./styles.scss";
 
 const Form = ({ setPage, content }) => {
-  const [photo, setPhoto] = useState();
-  const [photoText, setPhotoText] = useState();
+  const [photo, setPhoto] = useState({});
+  const [photoText, setPhotoText] = useState({});
 
-  const photoChange = (event) => {
-    const file = event.target.files[0];
-    const src = URL.createObjectURL(file);
+  const photoChange = (id) => {
+    return (event) => {
+      const file = event.target.files[0];
+      const src = URL.createObjectURL(file);
+      const timestamp = new Date().toLocaleString();
 
-    setPhoto(src);
-    setPhotoText(new Date().toLocaleString());
+      setPhoto({ ...photo, [id]: src });
+      setPhotoText({ ...photoText, [id]: timestamp });
+    };
   };
 
   const section1 = content.section1;
@@ -79,8 +82,8 @@ const Form = ({ setPage, content }) => {
           <span className={css.question}>{section1.question7}</span>
 
           <div className={css.answer}>
-            {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
-            {!photo ? <input type="file" accept="image/*;capture=camera" onChange={photoChange} /> : null}
+            {photo.a && <div className={css.photo}><img src={photo.a} /><span>{photoText.a}</span></div>}
+            {!photo.a ? <input type="file" accept="image/*;capture=camera" onChange={photoChange("a")} /> : null}
           </div>
         </div>
 
@@ -134,8 +137,8 @@ const Form = ({ setPage, content }) => {
           <span className={css.question}>{section2.question5}</span>
 
           <div className={css.answer}>
-            {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
-            {!photo ? <input type="file" accept="image/*;capture=camera" onChange={photoChange} /> : null}
+            {photo.b && <div className={css.photo}><img src={photo.b} /><span>{photoText.b}</span></div>}
+            {!photo.b ? <input type="file" accept="image/*;capture=camera" onChange={photoChange("b")} /> : null}
           </div>
         </div>
 
@@ -199,8 +202,8 @@ const Form = ({ setPage, content }) => {
           <span className={css.question}>{section3.question6}</span>
 
           <div className={css.answer}>
-            {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
-            {!photo ? <input type="file" accept="image/*;capture=camera" onChange={photoChange} /> : null}
+            {photo.c && <div className={css.photo}><img src={photo.c} /><span>{photoText.c}</span></div>}
+            {!photo.c ? <input type="file" accept="image/*;capture=camera" onChange={photoChange("c")} /> : null}
           </div>
         </div>
 
@@ -229,8 +232,8 @@ const Form = ({ setPage, content }) => {
           <span className={css.question}>{section4.question2}</span>
 
           <div className={css.answer}>
-            {photo && <div className={css.photo}><img src={photo} /><span>{photoText}</span></div>}
-            {!photo ? <input type="file" accept="image/*;capture=camera" onChange={photoChange} /> : null}
+            {photo.d && <div className={css.photo}><img src={photo.d} /><span>{photoText.d}</span></div>}
+            {!photo.d ? <input type="file" accept="image/*;capture=camera" onChange={photoChange("d")} /> : null}
           </div>
         </div>
 
