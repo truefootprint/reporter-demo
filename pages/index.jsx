@@ -13,7 +13,8 @@ const Index = () => {
   const [language, setLanguage] = useState("english");
 
   const setPageAndScroll = (page) => {
-    window.scrollTo(0, 0);
+    document.getElementById("scrollable").scrollTo(0, 0);
+
     setPage(page);
     setLoading(false);
   };

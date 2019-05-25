@@ -29,7 +29,6 @@
 }
 
 .thanks {
-  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +52,14 @@
   margin-top: 1em;
 }
 
-.hidden {
+.select {
   visibility: 0;
   opacity: 0;
+
+  &.selected {
+    margin: 6em auto 0 auto;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
 }

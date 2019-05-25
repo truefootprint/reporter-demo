@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Icon from "../icon";
+import Phone from "../phone";
 
 import "./reset.scss";
 import "./typography.scss";
@@ -18,7 +19,9 @@ const Layout = ({ children }) => <>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   </Head>
 
-  {children}
+  <Phone>
+    {children}
+  </Phone>
 </>;
 
 export default Layout;

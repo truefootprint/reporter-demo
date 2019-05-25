@@ -10,6 +10,11 @@ body {
 a {
   text-decoration: none;
   color: $accent1-700;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 h3, h4 {

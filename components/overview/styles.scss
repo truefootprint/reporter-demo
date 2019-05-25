@@ -1,8 +1,6 @@
 @import "../layout/color.scss";
 
 .overview {
-  padding: 1em;
-
   p {
     line-height: 1.4;
     margin-bottom: 1.2em;
@@ -45,5 +43,6 @@
     border-radius: 0.2em;
     text-align: center;
     margin-bottom: 3em;
+    cursor: pointer;
   }
 }
