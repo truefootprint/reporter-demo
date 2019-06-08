@@ -38,8 +38,13 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
 
     <select ref={projectMenu} className={selectClass} onChange={restartApp}>
       <option selected disabled>Choose an option:</option>
-      <option value="school,english">School: English</option>
-      <option value="school,swahili">School: Swahili</option>
+
+      <option value="school_construction,english">School Construction: en</option>
+      <option value="school_construction,swahili">School Construction: sw</option>
+      <option value="school_ongoing,english">School Ongoing</option>
+      <option value="pump,english">Pump</option>
+      <option value="workshop,english">Workshop</option>
+      <option value="post_workshop,english">Post Workshop</option>
     </select>
   </>;
 };

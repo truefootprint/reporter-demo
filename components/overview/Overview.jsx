@@ -12,9 +12,9 @@ const Overview = ({ setPage, content }) => (
     <Image className={css.map} src={content.image_path} />
 
     <ul>
-      <li>{content.bullet_point1}</li>
-      <li>{content.bullet_point2}</li>
-      <li>{content.bullet_point3}</li>
+      { (content.bullet_point1 || '').length > 0 && <li>{content.bullet_point1}</li> }
+      { (content.bullet_point2 || '').length > 0 && <li>{content.bullet_point2}</li> }
+      { (content.bullet_point3 || '').length > 0 && <li>{content.bullet_point3}</li> }
     </ul>
 
     <a className={css.spec}>{content.specification}</a>
