@@ -1,0 +1,18 @@
+@import "../layout/color.scss";
+
+.header {
+  background: $primary-950;
+  text-align: center;
+  height: 4.5em;
+  zoom: 0.8;
+
+  svg {
+    position: relative;
+    top: -1.4em;
+    left: -1em;
+  }
+
+  path {
+    fill: white;
+  }
+}
