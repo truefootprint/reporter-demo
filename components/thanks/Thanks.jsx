@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import Spinner from "../spinner";
 import Logo from "../logo";
+import Footer from "../footer";
 import css from "./styles.scss";
 
 const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
@@ -34,6 +35,10 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
       <a className={css.logo} onClick={openMenu}>
         <Logo variant="stackedText" />
       </a>
+
+      <div className={css.footer}>
+        <Footer />
+      </div>
     </div>
 
     <select ref={projectMenu} className={selectClass} onChange={restartApp}>

@@ -1,5 +1,6 @@
 import css from "./styles.scss";
 import Image from "../image";
+import Footer from "../footer";
 
 const Overview = ({ setPage, content }) => (
   <div className={css.overview}>
@@ -24,6 +25,8 @@ const Overview = ({ setPage, content }) => (
         {content.call_to_action}
       </button>
     </div>
+
+    <Footer />
   </div>
 );
 

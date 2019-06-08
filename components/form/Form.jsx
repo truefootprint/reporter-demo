@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Spinner from "../spinner";
 import Photo from "../photo";
+import Footer from "../footer";
 import css from "./styles.scss";
 
 const Form = ({ setPage, content }) => {
@@ -249,6 +250,8 @@ const Form = ({ setPage, content }) => {
           {content.call_to_action}
         </button>
       </div>
+
+      <Footer />
     </div>
   </>;
 }

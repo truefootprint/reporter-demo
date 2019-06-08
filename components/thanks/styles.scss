@@ -37,7 +37,7 @@
 
 .thank_you {
   font-size: 3em;
-  margin: 1.5em 0 1em 0;
+  margin: 0.5em 0 1em 0;
 }
 
 .received {
@@ -62,4 +62,11 @@
     visibility: visible;
     opacity: 1;
   }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
 }
