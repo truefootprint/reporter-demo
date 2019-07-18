@@ -1,5 +1,4 @@
 import Logo from "../logo";
-import Image from "../image";
 import css from "./styles.scss";
 
 const Loading = () => (
@@ -8,7 +7,7 @@ const Loading = () => (
       <Logo variant="stackedText" />
     </div>
 
-    <Image className={css.spinner} src="/static/images/spinner.gif" />
+    <img className={css.spinner} src="/static/images/spinner.gif" />
   </div>
 );
 

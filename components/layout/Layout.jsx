@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Icon from "../icon";
 import Phone from "../phone";
 import Header from "../header";
 
@@ -11,7 +10,7 @@ const Layout = ({ children }) => <>
     <title>TrueFootprint</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" />
-    <Icon src="/static/images/apple-touch-icon.png" type="apple-touch-icon" />
+    <link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 

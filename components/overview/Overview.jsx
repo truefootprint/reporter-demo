@@ -1,5 +1,4 @@
 import css from "./styles.scss";
-import Image from "../image";
 import Footer from "../footer";
 
 const Overview = ({ setPage, content }) => (
@@ -10,7 +9,7 @@ const Overview = ({ setPage, content }) => (
     <p>{content.paragraph1}</p>
     <p>{content.paragraph2}</p>
 
-    <Image className={css.map} src={content.image_path} />
+    <img className={css.map} src={content.image_path} />
 
     <ul>
       { (content.bullet_point1 || '').length > 0 && <li>{content.bullet_point1}</li> }
