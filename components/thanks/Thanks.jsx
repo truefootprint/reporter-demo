@@ -52,7 +52,6 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
       <option value="school_ongoing,english">School Ongoing</option>
       <option value="pump,english">Pump</option>
       <option value="workshop,english">Workshop</option>
-      <option value="post_workshop,english">Post Workshop</option>
     </select>
   </>;
 };
