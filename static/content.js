@@ -1,5 +1,84 @@
 export default {
   english: {
+    agri_farmer: {
+      overview: {
+        title: `Coffee farming`,
+        subtitle: `Azizi,`,
+        paragraph1: `Thank you for taking part in the agricultural training. We hope you are succeeding in applying your knowledge from the course.`,
+        paragraph2: `We'd like to ask you some questions about the progress on your farm.`,
+        image_path: `/static/images/school-map.png`,
+        specification: `View your training materials`,
+        call_to_action: `Start`,
+      },
+      form: {
+        title: `Send an update`,
+        back: `back`,
+        intro: `Please answer the following questions about your farming practices.
+                If you are unsure of an answer, you can leave it blank.
+                Please refer to the training materials when in doubt.`,
+        call_to_action: `Submit answers`,
+
+        section1: {
+          title: `Inputs`,
+
+          question1: `How much compost did you use from your plot?`,
+          placeholder1: `e.g. 15kg`,
+
+          question2: `How much fertiliser?`,
+          placeholder2: `e.g. 2 liters`,
+
+          question3: `Pesticides?`,
+          placeholder3: `e.g. 1 liter`,
+
+          question4: `Seedlings planted?`,
+          placeholder4: `e.g. 50`,
+
+          question5: `Rainwater captured?`,
+          placeholder5: `e.g. 3`,
+
+          question6: `Most coffee trees shaded?`,
+          option6a: `Yes`,
+          option6b: `No`,
+
+          question7: `Photo:`,
+          placeholder7: `Take a photo`,
+
+          question8: `Any other comments:`,
+        },
+        section5: {
+          title: `Outputs`,
+
+          question1: `Total harvest:`,
+          placeholder1: `e.g. 500kg`,
+
+          question2: `How much grade 1?`,
+          placeholder2: `e.g. 50kg`,
+
+          question3: `How much grade 2?`,
+          placeholder3: `e.g. 300kg`,
+
+          question4: `How much grade 3?`,
+          placeholder4: `e.g. 100kg`,
+
+          question5: `How much grade 4?`,
+          placeholder5: `e.g. 50kg`,
+
+          question6: `Total amount sold:`,
+          placeholder6: `e.g. 450kg`,
+
+          question7: `Total price:`,
+          placeholder7: `e.g. 1000 BIF`,
+
+          question8: `Any other comments:`,
+        },
+      },
+      thanks: {
+        title: `Thank you`,
+        paragraph1: `We have received your answers.`,
+        paragraph2: `See you next week.`,
+      },
+    },
+
     school_construction: {
       overview: {
         title: `Bilobilo`,

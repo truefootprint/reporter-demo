@@ -9,7 +9,7 @@ import Content from "../static/content.js";
 const Index = () => {
   const [page, setPage] = useState("overview");
   const [loading, setLoading] = useState(true);
-  const [project, setProject] = useState("school_construction");
+  const [project, setProject] = useState("agri_farmer");
   const [language, setLanguage] = useState("english");
 
   const setPageAndScroll = (page) => {

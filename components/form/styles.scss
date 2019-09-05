@@ -20,14 +20,14 @@
 }
 
 .question {
-  flex: 0.5;
+  flex: 0.6;
   text-align: right;
   line-height: 1.4;
   padding-right: 0.5em;
 }
 
 .answer {
-  flex: 0.5;
+  flex: 0.4;
   display: flex;
 
   input[type=text] {
@@ -66,6 +66,11 @@
     height: 5em;
     border-radius: 0;
   }
+}
+
+.any_other_comments span {
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .center {
