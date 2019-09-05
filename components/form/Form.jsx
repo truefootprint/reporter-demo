@@ -11,6 +11,7 @@ const Form = ({ setPage, content }) => {
   const section4 = content.section4;
   const section5 = content.section5;
   const section6 = content.section6;
+  const section7 = content.section7;
 
   return <>
     <Spinner />
@@ -393,6 +394,75 @@ const Form = ({ setPage, content }) => {
         { (section6.question11 || '').length > 0 && <>
         <div className={`${css.field} ${css.any_other_comments}`}>
           <span className={css.question}>{section6.question11}</span>
+        </div>
+        <div className={css.offset}>
+          <textarea></textarea>
+        </div> </>}
+      </div> }
+
+      { section7 &&
+      <div className={`${css.section} ${css.third}`}>
+        <h5>{section7.title}</h5>
+
+        { (section7.question1 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question1}</span>
+
+          <div className={css.answer}>
+            <label className={css.radio}><input type="radio" name="group-5" />{section7.option1a}</label>
+            <label className={css.radio}><input type="radio" name="group-5" />{section7.option1b}</label>
+          </div>
+        </div> </>}
+
+        { (section7.question2 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question2}</span>
+
+          <div className={css.answer}>
+            <label className={css.radio}><input type="radio" name="group-6" />{section7.option2a}</label>
+            <label className={css.radio}><input type="radio" name="group-6" />{section7.option2b}</label>
+          </div>
+        </div> </>}
+
+        { (section7.question3 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question3}</span>
+
+          <div className={css.answer}>
+            <label className={css.radio}><input type="radio" name="group-7" />{section7.option3a}</label>
+            <label className={css.radio}><input type="radio" name="group-7" />{section7.option3b}</label>
+          </div>
+        </div> </>}
+
+        { (section7.question4 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question4}</span>
+
+          <div className={css.answer}>
+            <label className={css.radio}><input type="radio" name="group-8" />{section7.option4a}</label>
+            <label className={css.radio}><input type="radio" name="group-8" />{section7.option4b}</label>
+          </div>
+        </div> </>}
+
+        { (section7.question5 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question5}</span>
+
+          <div className={css.answer}>
+            <label className={css.radio}><input type="radio" name="group-9" />{section7.option5a}</label>
+            <label className={css.radio}><input type="radio" name="group-9" />{section7.option5b}</label>
+          </div>
+        </div> </>}
+
+        { (section7.question6 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section7.question6}</span>
+          <div className={css.answer}><Photo placeholder={section7.placeholder6} /></div>
+        </div> </>}
+
+        { (section7.question7 || '').length > 0 && <>
+        <div className={`${css.field} ${css.any_other_comments}`}>
+          <span className={css.question}>{section7.question7}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>

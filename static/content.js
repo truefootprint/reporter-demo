@@ -79,7 +79,7 @@ export default {
       },
     },
 
-    coffee_trainer: {
+    agri_trainer: {
       overview: {
         title: `Coffee training`,
         subtitle: `Assessment`,
@@ -137,6 +137,91 @@ export default {
         title: `Thank you`,
         paragraph1: `We have received your answers for farmer Azizi.`,
         paragraph2: `See you next time.`,
+      },
+    },
+
+    agri_monitor: {
+      overview: {
+        title: `Farming`,
+        paragraph1: `Thank you for being a monitor.`,
+        paragraph2: `We'd like to ask you some questions about the village and Azizi's farm.`,
+        image_path: `/static/images/school-map.png`,
+        specification: `View your training materials`,
+        call_to_action: `Start`,
+      },
+      form: {
+        title: `Send an update`,
+        back: `back`,
+        intro: `Please answer the following questions about the village and Azizi's farm.
+                If you are unsure of an answer, you can leave it blank.`,
+        call_to_action: `Submit answers`,
+
+        section2: {
+          title: `Air quality in the village`,
+
+          question1: `Is the air in the village clean?`,
+          option1a: `Yes`,
+          option1b: `No`,
+
+          question2: `Are there any foul odours?`,
+          option2a: `Yes`,
+          option2b: `No`,
+
+          question6: `Any other comments:`,
+        },
+        section3: {
+          title: `Water quality in the village`,
+
+          question1: `Is the drinking water in the village clean?`,
+          option1a: `Yes`,
+          option1b: `No`,
+
+          question2: `Is the stream clean?`,
+          option2a: `Yes`,
+          option2b: `No`,
+
+          question3: `Are there any foul odours?`,
+          option3a: `Yes`,
+          option3b: `No`,
+
+          question4: `Are there many dead fish in the stream?`,
+          option4a: `Yes`,
+          option4b: `No`,
+
+          question6: `Photo:`,
+          placeholder6: `Choose a file`,
+
+          question7: `Any other comments:`,
+        },
+        section7: {
+          title: `On Azizi's farm`,
+
+          question1: `Any signs of soil pollution?`,
+          option1a: `Yes`,
+          option1b: `No`,
+
+          question2: `Any signs of water pollution?`,
+          option2a: `Yes`,
+          option2b: `No`,
+
+          question3: `Any signs of air pollution?`,
+          option3a: `Yes`,
+          option3b: `No`,
+
+          question4: `Are there children working?`,
+          option4a: `Yes`,
+          option4b: `No`,
+
+          question6: `Photo:`,
+          placeholder6: `Choose a file`,
+
+          question7: `Any other comments:`,
+        },
+      },
+      thanks: {
+        title: `Thank you`,
+        paragraph1: `We have received your answers.`,
+        paragraph2: `Now go to Nyah's farm.`,
       },
     },
 
