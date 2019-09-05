@@ -10,6 +10,7 @@ const Form = ({ setPage, content }) => {
   const section3 = content.section3;
   const section4 = content.section4;
   const section5 = content.section5;
+  const section6 = content.section6;
 
   return <>
     <Spinner />
@@ -301,6 +302,97 @@ const Form = ({ setPage, content }) => {
         { (section5.question8 || '').length > 0 && <>
         <div className={`${css.field} ${css.any_other_comments}`}>
           <span className={css.question}>{section5.question8}</span>
+        </div>
+        <div className={css.offset}>
+          <textarea></textarea>
+        </div> </>}
+      </div> }
+
+      { section6 &&
+      <div className={`${css.section} ${css.first}`}>
+        <h5>{section6.title}</h5>
+
+        { (section6.question1 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question1}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder1} />
+          </div>
+        </div> </>}
+
+        { (section6.question2 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question2}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder2} />
+          </div>
+        </div> </>}
+
+        { (section6.question3 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question3}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder3} />
+          </div>
+        </div> </>}
+
+        { (section6.question4 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question4}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder4} />
+          </div>
+        </div> </>}
+
+        { (section6.question5 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question5}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder5} />
+          </div>
+        </div> </>}
+
+        { (section6.question6 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question6}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder6} />
+          </div>
+        </div> </>}
+
+        { (section6.question7 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question7}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder8} />
+          </div>
+        </div> </>}
+
+        { (section6.question8 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question8}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder8} />
+          </div>
+        </div> </>}
+
+        { (section6.question9 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question9}</span>
+          <div className={css.answer}>
+            <input type="text" placeholder={section6.placeholder9} />
+          </div>
+        </div> </>}
+
+        { (section6.question10 || '').length > 0 && <>
+        <div className={css.field}>
+          <span className={css.question}>{section6.question10}</span>
+          <div className={css.answer}><Photo placeholder={section6.placeholder10} /></div>
+        </div> </>}
+
+        { (section6.question11 || '').length > 0 && <>
+        <div className={`${css.field} ${css.any_other_comments}`}>
+          <span className={css.question}>{section6.question11}</span>
         </div>
         <div className={css.offset}>
           <textarea></textarea>

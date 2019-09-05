@@ -79,6 +79,67 @@ export default {
       },
     },
 
+    coffee_trainer: {
+      overview: {
+        title: `Coffee training`,
+        subtitle: `Assessment`,
+        paragraph1: `It's time to assess Azizi’s use of the farming best practices.`,
+        paragraph2: `We'd like to ask you some questions about the progress on his farm.`,
+        image_path: `/static/images/school-map.png`,
+        specification: `View your training materials`,
+        call_to_action: `Start`,
+      },
+      form: {
+        title: `Send an update`,
+        back: `back`,
+        intro: `Please answer the following questions about Azizi’s farming practices.
+                If you are unsure of an answer, you can leave it blank.
+                Please refer to the training materials when in doubt.`,
+        call_to_action: `Submit answers`,
+
+        section6: {
+          title: `Ratings`,
+
+          question1: `How would you rate the use of best agricultural practices?`,
+          placeholder1: `1 - 10`,
+
+          question2: `Use of composting plot:`,
+          placeholder2: `1 - 10`,
+
+          question3: `Use of mulching:`,
+          placeholder3: `1 - 10`,
+
+          question4: `Effective shading of trees:`,
+          placeholder4: `1 - 10`,
+
+          question5: `Rainwater collection:`,
+          placeholder5: `1 - 10`,
+
+          question6: `Use of fertilisers:`,
+          placeholder6: `1 - 10`,
+
+          question7: `Use of pesticides:`,
+          placeholder7: `1 - 10`,
+
+          question8: `Use of water:`,
+          placeholder8: `1 - 10`,
+
+          question9: `Quality of the soil:`,
+          placeholder9: `1 - 10`,
+
+          question10: `Photo:`,
+          placeholder10: `Take a photo`,
+
+          question11: `Any other comments:`,
+        },
+      },
+      thanks: {
+        title: `Thank you`,
+        paragraph1: `We have received your answers for farmer Azizi.`,
+        paragraph2: `See you next time.`,
+      },
+    },
+
     school_construction: {
       overview: {
         title: `Bilobilo`,

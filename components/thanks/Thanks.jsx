@@ -45,6 +45,7 @@ const Thanks = ({ setPage, setLoading, setProject, setLanguage, content }) => {
       <option selected disabled>Choose an option:</option>
 
       <option value="agri_farmer,english">Agri Farmer: en</option>
+      <option value="coffee_trainer,english">Coffee Trainer: en</option>
       <option value="school_construction,english">School Construction: en</option>
       <option value="school_construction,swahili">School Construction: sw</option>
       <option value="school_ongoing,english">School Ongoing</option>
